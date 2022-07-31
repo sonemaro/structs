@@ -16,7 +16,7 @@ functions or improve the existing code.
 ## Install
 
 ```bash
-go get github.com/fatih/structs
+go get github.com/sonemaro/structs
 ```
 
 ## Usage and Examples
@@ -81,6 +81,7 @@ structs (such as retrieving a single Field).
 // Create a new struct type:
 s := structs.New(server)
 
+raw := s.GetRaw()	  // Get the initial struct
 m := s.Map()              // Get a map[string]interface{}
 v := s.Values()           // Get a []interface{}
 f := s.Fields()           // Get a []*Field
