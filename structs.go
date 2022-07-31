@@ -32,6 +32,11 @@ func New(s interface{}) *Struct {
 	}
 }
 
+
+func (s *Struct) GetRaw() interface{} {
+	return s.raw
+}
+
 // Map converts the given struct to a map[string]interface{}, where the keys
 // of the map are the field names and the values of the map the associated
 // values of the fields. The default key string is the struct field name but
